@@ -1,6 +1,8 @@
 # 🛡️ TokenForge
 
-**Enterprise-Grade Distributed Identity & Authentication System**
+![TokenForge Architecture](docs/assets/architecture-diagram.png)
+
+**TokenForge** is a professional, production-ready authentication system built with **NestJS**. It provides a secure, scalable, and modular foundation for managing user identities, roles, and sessions.
 
 > "Identity is the new perimeter."
 
