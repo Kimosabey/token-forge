@@ -41,7 +41,7 @@ export class AuthService {
         }
 
         // Hash password
-        const saltRounds = this.configService.get<number>('BCRYPT_ROUNDS', 12);
+        const saltRounds = parseInt(this.configService.get<string>('BCRYPT_ROUNDS', '12'), 10);
         const hashedPassword = await bcrypt.hash(registerDto.password, saltRounds);
 
         // Get default user role
