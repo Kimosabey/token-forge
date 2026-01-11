@@ -172,7 +172,7 @@ This project demonstrates **senior-level** mastery of:
 - `POST /users/me/mfa` - Enable/disable MFA
 
 ### Interactive Docs
-**Swagger UI**: `http://localhost:3000/api` (when service is running)
+**Swagger UI**: `http://localhost:3000/api/docs` (when service is running)
 
 ---
 
