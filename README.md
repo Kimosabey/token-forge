@@ -127,33 +127,9 @@ npm run start:dev
 
 ---
 
-## 🎯 Project Purpose
-
-This project demonstrates **senior-level** mastery of:
-
-### 1. Identity & Access Management (IAM)
-- **OAuth 2.0 / OIDC**: Industry-standard authentication protocols
-- **JWT Best Practices**: Token lifecycle, rotation, revocation
-- **RBAC (Role-Based Access Control)**: Fine-grained permissions
-
-### 2. Distributed Systems
-- **Stateless Architecture**: Horizontal scaling via JWT
-- **Session Management**: Redis-backed distributed state
-- **Key Rotation**: Zero-downtime cryptographic updates
-
-### 3. Security Engineering
-- **Defense-in-Depth**: Multi-layered security architecture
-- **Threat Modeling**: Attack vectors & mitigations
-- **Compliance**: GDPR, HIPAA considerations
-
-### 4. Modern Backend Development
-- **NestJS Ecosystem**: Modular, testable, enterprise-ready
-- **TypeScript**: End-to-end type safety
-- **Docker**: Reproducible infrastructure
-
 ---
 
-## 🧪 API Endpoints
+## 🎯 API Endpoints
 
 ### Authentication
 - `POST /auth/register` - User registration
@@ -173,47 +149,6 @@ This project demonstrates **senior-level** mastery of:
 
 ### Interactive Docs
 **Swagger UI**: `http://localhost:3000/api/docs` (when service is running)
-
----
-
-## 💡 Learning Outcomes
-
-After exploring this project, you'll understand:
-
-- ✅ **OAuth 2.0 / OIDC** protocols and flows
-- ✅ **JWT Security** (signature algorithms, claims, rotation)
-- ✅ **Token-based Authentication** vs session cookies
-- ✅ **Distributed Session Management** with Redis
-- ✅ **Rate Limiting** patterns for APIs
-- ✅ **RBAC** (Role-Based Access Control)
-- ✅ **Key Rotation** strategies (JWKS)
-- ✅ **Security Best Practices** (password hashing, MFA, audit logging)
-- ✅ **NestJS Architecture** (modules, guards, interceptors)
-
----
-
-## 📈 Senior Engineering Proof Points
-
-### ✅ Security Mastery
-- OIDC/OAuth 2.0 implementation
-- JWT best practices (RS256, rotation, blacklist)
-- Multi-factor authentication
-- Comprehensive audit logging
-
-### ✅ Distributed Systems
-- Stateless architecture for horizontal scaling
-- Redis-backed distributed state management
-- Key rotation without downtime
-
-### ✅ System Design
-- Defense-in-depth security architecture
-- Failure scenario planning & mitigation
-- Performance optimization (caching, indexing)
-
-### ✅ Full-Stack Execution
-- Backend API design (NestJS + TypeScript)
-- Infrastructure as Code (Docker Compose)
-- Comprehensive documentation
 
 ---
 
