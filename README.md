@@ -7,15 +7,21 @@
 ## 📌 Project Overview
 TokenForge is a robust, security-first Authentication & Authorization service built with **NestJS**. It moves beyond simple JWT signing to implement refined enterprise patterns like OIDC (OpenID Connect), Key Rotation, Token Revocation, and Distributed Session management via Redis.
 
-**Role Target**: Senior Backend / Platform Engineer.
+**Role Target**: Senior Backend / Platform<div align="center">
 
-## 🏗️ Tech Stack
-*   **Framework**: [NestJS](https://nestjs.com/) (Modular Architecture)
-*   **Language**: TypeScript
-*   **Datastore**: PostgreSQL (User/Identity Strings)
-*   **Session/Cache**: Redis (Token Blacklist, Session Store)
-*   **Standards**: OAuth 2.0, OIDC (OpenID Connect)
-*   **Infrastructure**: Docker Compose
+![TokenForge Thumbnail](./docs/assets/thumbnail.png)
+
+![Status](https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge)
+![NestJS](https://img.shields.io/badge/nestjs-10-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-7-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![OIDC](https://img.shields.io/badge/standard-OIDC-orange?style=for-the-badge)
+
+</div>
+
+## 🏗️ Architecture
+
+![System Architecture](./docs/assets/architecture.png)
+*High-level OIDC Authentication Flow*
 
 ## ⚡ Core Architecture (The "Senior Signals")
 1.  **OIDC Compliance**: Implementing discovery endpoints and standardized flows.
