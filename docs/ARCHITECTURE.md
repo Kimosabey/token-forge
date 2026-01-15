@@ -4,7 +4,7 @@
 
 ## 📐 System Overview
 
-![System Architecture](./assets/architecture.png)
+![System Architecture](./assets/architecture-diagram.png)
 
 TokenForge implements a modern, security-first authentication infrastructure based on **OpenID Connect (OIDC)** standards. The system is designed to handle enterprise-scale identity management with distributed session storage and automated key rotation.
 
@@ -23,13 +23,23 @@ TokenForge implements a modern, security-first authentication infrastructure bas
 - **OIDC Compliance**: Standard discovery endpoints and flows
 - **Business Logic**: User management, session handling, RBAC
 
-### 3. **Redis Session Store**
+### 3. **MFA Service** (Security)
+- **TOTP**: Time-based One-Time Password generation
+- **QR Code**: Zero-trust provisioning
+- **Redis Storage**: Temporary secret holding
+
+### 4. **Email Service** (Notifications)
+- **Verification**: Token-based email proofing
+- **Password Reset**: Secure forgot-password flows
+- **Templates**: HTML transactional emails
+
+### 5. **Redis Session Store**
 - **Refresh Token Storage**: Stateful tracking of long-lived tokens
 - **Token Blacklist**: Instant revocation capabilities
 - **Session Cache**: Fast access to user session data
 - **TTL Management**: Automatic cleanup of expired tokens
 
-### 4. **PostgreSQL Database**
+### 6. **PostgreSQL Database**
 - **User Accounts**: Identity storage with encrypted credentials
 - **Audit Logs**: Complete authentication history
 - **RBAC Configuration**: Role and permission definitions
