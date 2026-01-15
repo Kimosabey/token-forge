@@ -154,11 +154,13 @@ npm run start:dev
 
 ## 🚀 Future Enhancements
 
+- [x] **Account recovery workflows** (Forgot Password implemented)
+- [x] **MFA implementation** (TOTP + QR Code)
+- [x] **Rate Limiting** (Redis-backed)
 - [ ] OAuth 2.0 Social Login (Google, GitHub, Microsoft)
 - [ ] WebAuthn / Passkey support
 - [ ] Device fingerprinting & tracking
 - [ ] Passwordless authentication (Magic Links)
-- [ ] Account recovery workflows
 - [ ] Admin dashboard (user management UI)
 - [ ] Prometheus metrics export
 - [ ] Grafana monitoring dashboards
