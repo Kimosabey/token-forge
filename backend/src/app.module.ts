@@ -10,6 +10,7 @@ import { RedisModule } from './redis/redis.module';
 import { OidcModule } from './oidc/oidc.module';
 import { MfaModule } from './mfa/mfa.module';
 import { EmailModule } from './email/email.module';
+import { UsersModule } from './users/users.module';
 import { getDatabaseConfig } from './config/database.config';
 import { throttlerConfig } from './throttle/throttle.config';
 
@@ -39,6 +40,7 @@ import { throttlerConfig } from './throttle/throttle.config';
     OidcModule,
     MfaModule,
     EmailModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [
