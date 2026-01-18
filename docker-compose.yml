@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  # 🐘 Identity Store
+  db:
+    image: postgres:16-alpine
+    container_name: tokenforge_db
+    environment:
+      POSTGRES_USER: tokenforge
+      POSTGRES_PASSWORD: secure_password_dev
+      POSTGRES_DB: tokenforge_db
+    ports:
+      - "5433:5432" # Changed to 5433 to avoid conflict with local PostgreSQL
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - tokenforge_net
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U tokenforge" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 🚀 Session & Cache Store
+  redis:
+    image: redis:7-alpine
+    container_name: tokenforge_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - tokenforge_net
+    command: redis-server --appendonly yes
+
+  # 🛠️ Database Management GUI
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: tokenforge_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@tokenforge.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    networks:
+      - tokenforge_net
+    depends_on:
+      - db
+
+networks:
+  tokenforge_net:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:

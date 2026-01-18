@@ -1,0 +1,21 @@
+# Infra
+postgres_data/
+redis_data/
+.env
+
+# Node
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Backend
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/coverage/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
