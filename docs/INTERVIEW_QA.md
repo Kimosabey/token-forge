@@ -1,4 +1,4 @@
-# 🎤 Interview Cheat Sheet: TokenForge
+# 🎓 Interview Q&A: TokenForge
 
 ## 1. The Elevator Pitch (2 Minutes)
 

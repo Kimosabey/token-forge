@@ -1,8 +1,12 @@
-# 🛡️ Failure Scenarios & Resilience
+# 🛡️ Failure Scenarios & Resilience: TokenForge
 
 > "Identity is a critical path. If Auth is down, the whole platform is down."
 
 This document details how TokenForge maintains availability during DB outages and attacks.
+
+![Workflow](./assets/workflow.png)
+
+---
 
 ## 1. Failure Matrix
 

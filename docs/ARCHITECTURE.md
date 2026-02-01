@@ -1,8 +1,10 @@
-# 🏗️ System Architecture
+# 🏗️ System Architecture: TokenForge
 
 ## 1. High-Level Design (HLD)
 
 TokenForge is a **Distributed Identity Provider** implementing the OIDC/OAuth 2.0 standard. It decouples Authentication (Identity) from Authorization (Access), utilizing a highly scalable "Stateless Auth, Stateful Refresh" architecture.
+
+![Architecture](./assets/architecture.png)
 
 ```mermaid
 graph TD

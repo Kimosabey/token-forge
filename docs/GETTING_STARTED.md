@@ -1,9 +1,13 @@
-# 🚀 Getting Started with TokenForge
+# 🚀 Getting Started: TokenForge
 
 > **Prerequisites**
 > *   **Docker Desktop** (PostgreSQL + Redis)
 > *   **Node.js v18+**
 > *   **npm**
+
+![Dashboard Preview](./assets/dashboard.png)
+
+---
 
 ## 1. Environment Setup
 
